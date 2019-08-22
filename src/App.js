@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Chapter from './components/Chapter';
+import Fade from 'react-reveal/Fade';
+
+const animateList = ["Personal Information", "Studies", "Experience", 4, 5];
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Fade top>
+        <h1>PORTFOLIO</h1>
+      </Fade>
+
+      <Fade top>
+        <Chapter title={animateList[0]}/>
+      </Fade>
+
+      {/* {animateList.map((item, key) => {
+        <div style={styles.block} key={key}>
+          <Fade top>
+            <Chapter name={item}/>
+          </Fade>
+        </div>
+      })} */}
     </div>
   );
 }
+
 
 export default App;
