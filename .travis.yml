@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- node
+branches:
+  only:
+  - master
+script:
+- npm install
+- npm run build
+deploy:
+  provider: heroku
+  api_key:
+    secure: f5+s+vmCbjo8rFx2QKVO0HeZOkJAehrM6UaIGgoWpmAbO0rMhrqTnCH3dsLt06JdUQRjk2MdHW6jyUBWFMOOBrV/VEcvW7cowDxhP/iMEovyT+CWmTp7JXRWrlMN0mx7YbWO/+gt8KdUEIGwOrFzEmKtQfQ3BNycNkoU2MdmD6hM0Tyxm6R8xpJ3JM7FQe5rhnRhbzM8SHOUgkPMJT+NmKgaFiyHDQK6C/PVd6p0225owCcExPbxNS8hV15h2tFBeBSkf+DBF5mnqj7dgwv67DPM50fehq27sYhHSO56xtvMO+ZhoTf7vl6FWFjNBHlv+Rgdjw3gxqyGDqWXRxwd5TaQRmY0ePOHSaO1zA1+zxxtF7Q5mtxRZuHDICr4nufLINE57eg4xCa5U36CNPGZAtHIudc9XjnzFPopKkdJua7k6yTuqM8e0rSrEx3TUzhsrZVOSh25CPkL9b8jlYd/EpyM0Kyqy3ImwoYXtsK+2ekCWClLqwuD6FlWjt1OQ6wR71vuaRmQcHlNjzD0i2mIQULqizVc3cCditEBXZzP5XF+s/GvVR5NVAGKXL86+AMhfiDvULGH80jYdLXmFjn3cfQzlp4rhUnma03XADRYfay8zsKhBn3CJGA0t5tx6h3wtIDglOlGhbMi+FQf8UpHVW0poes+Xp/prOrkcXtyZ60=
+  app: portfolio-jcpascolo
+  on: master
