@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Fade top>
-        <h1>PORTFOLIO</h1>
+        <h1>PORTFOLIO 2</h1>
         <h1>JCGP</h1>
       </Fade>
 
