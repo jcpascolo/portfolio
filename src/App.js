@@ -7,6 +7,7 @@ const animateList = ["Personal Information", "Studies", "Experience", 4, 5];
 
 
 function App() {
+  
   return (
     <div className="App">
       <Fade top>
@@ -16,14 +17,6 @@ function App() {
       <Fade top>
         <Chapter title={animateList[0]}/>
       </Fade>
-
-      {/* {animateList.map((item, key) => {
-        <div style={styles.block} key={key}>
-          <Fade top>
-            <Chapter name={item}/>
-          </Fade>
-        </div>
-      })} */}
     </div>
   );
 }
