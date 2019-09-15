@@ -1,5 +1,16 @@
 .App {
   text-align: center;
+  background-color: #111222;
+}
+
+.container {
+  z-index: 1;
+  background-color: #FAEBD7;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  -webkit-box-shadow: 5px 5px 3px 0px rgba(255,255,255,0.5);
+  -moz-box-shadow: 5px 5px 3px 0px rgba(255,255,255,0.5);
+  box-shadow: 5px 5px 3px 0px rgba(255,255,255,0.5);
 }
 
 /* 

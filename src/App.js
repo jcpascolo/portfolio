@@ -1,24 +1,23 @@
 import React from 'react';
 import './App.css';
-import Chapter from './components/Chapter';
-import Fade from 'react-reveal/Fade';
+import 'materialize-css/dist/css/materialize.min.css';
+import { BrowserRouter, Route } from 'react-router-dom';
 
-const animateList = ["Personal Information", "Studies", "Experience", 4, 5];
-
+import Navbar from './components/Navbar';
+import PersonalInfo from './views/PersonalInfo';
+import Experience from './views/Experience';
 
 function App() {
-  
-  return (
-    <div className="App">
-      <Fade top>
-        <h1>PORTFOLIO</h1>
-        <h1>JCGP</h1>
-      </Fade>
 
-      <Fade top>
-        <Chapter title={animateList[0]}/>
-      </Fade>
-    </div>
+  return (
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <Route exact path="/" component={PersonalInfo} />
+        <Route path="/experience" component={Experience} />
+      </div>
+    </BrowserRouter>
+    
   );
 }
 
