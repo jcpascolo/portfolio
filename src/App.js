@@ -1,25 +1,22 @@
-import React from 'react';
-import './App.css';
-import 'materialize-css/dist/css/materialize.min.css';
-import { BrowserRouter, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 
-import Navbar from './components/Navbar';
-import PersonalInfo from './views/PersonalInfo';
-import Experience from './views/Experience';
+import "./App.css";
+
+import Navbar from "./components/Navbar";
+import PersonalInfo from "./views/PersonalInfo/PersonalInfo";
+import Education from "./views/EducationAndExp/Education";
 
 function App() {
-
   return (
     <BrowserRouter>
-      <div className="App">
+      <div id="App" className="App h-100">
         <Navbar />
         <Route exact path="/" component={PersonalInfo} />
-        <Route path="/experience" component={Experience} />
+        <Route path="/education_and_exp" component={Education} />
       </div>
     </BrowserRouter>
-    
   );
 }
-
 
 export default App;

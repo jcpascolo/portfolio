@@ -1,0 +1,13 @@
+.amarantFont {
+    font-family: 'Amaranth', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+}
+
+.navIcon{
+    width: 60px;
+    height: 60px;
+}
+

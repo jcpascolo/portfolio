@@ -3,10 +3,10 @@ import React from 'react';
 const PersonalInfo = () => {
 
     return (
-        <div className="container">
+        <div className="container content w-100">
             <div className="row">
                 <div className="col s12 center">
-                    Personal Information
+                    Personal Skills
                 </div>
 
                 <div className="col s12 center">
